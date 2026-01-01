@@ -1,33 +1,137 @@
-​<!DOCTYPE html>
-​<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Love Psychic Mary | Relationship Insight</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<style>
-:root { --gold: #d4af37; --deep-black: #0f0f0f; }
-body { background-color: var(--deep-black); color: #f8f8f8; font-family: 'Lora', serif; scroll-behavior: smooth; margin: 0; }
-h1, h2, h3, .brand { font-family: 'Cinzel', serif; }
-.gold-text { color: #d4af37; }
-.cta-button {
-background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 50%, #d4af37 100%);
-color: black !important; font-weight: bold; text-decoration: none;
-display: inline-block; padding: 12px 30px; border-radius: 50px; text-transform: uppercase; font-size: 14px;
-}
-.glass-card { background: rgba(26, 26, 26, 0.9); border: 1px solid rgba(212, 175, 55, 0.2); padding: 30px; border-radius: 15px; margin-bottom: 20px; }
-nav { background: rgba(15, 15, 15, 0.95); position: fixed; top: 0; width: 100%; z-index: 100; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 15px 0; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Psychic Mary | Relationship Insight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --deep-black: #0f0f0f;
+        }
+
+        body {
+            background-color: var(--deep-black);
+            color: #f8f8f8;
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand {
+            font-family: 'Cinzel', serif;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 50%, #d4af37 100%);
+            color: #000 !important;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:active {
+            transform: scale(0.95);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.95);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+        }
+
+        nav {
+            background: rgba(15, 15, 15, 0.98);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+    </style>
 </head>
-<body>
-<nav>
-<div style="max-width: 1000px; margin: auto; display: flex; justify-content: space-between; padding: 0 20px;">
-<div class="brand gold-text" style="font-weight: bold; letter-spacing: 2px;">LPM</div>
-<div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
-<a href="#welcome" style="color: white; text-decoration: none; margin-left: 15px;">Welcome</a>
-<a href="#services" style="color: white; text-decoration: none; margin-left: 15px;">Services</a>
-<a href="#book" style="color: white; text-decoration: none; margin-left: 15px;">Book</a>
-</div>
-</div>
-</nav>
+<body class="relative">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="brand text-xl gold-gradient font-bold tracking-widest">LPM</span>
+            <div class="space-x-4 text-[10px] uppercase tracking-widest font-bold">
+                <a href="#welcome" class="text-white no-underline">About</a>
+                <a href="#services" class="text-white no-underline">Services</a>
+                <a href="#book" class="text-[#d4af37] no-underline border border-[#d4af37] px-2 py-1 rounded">Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-20 px-6 text-center border-b border-yellow-900/30">
+        <h1 class="text-4xl md:text-6xl gold-gradient mb-4 uppercase tracking-widest font-bold leading-tight">Love Psychic Mary</h1>
+        <p class="italic text-lg text-gray-400">30 Years of Relationship Insight</p>
+    </header>
+
+    <!-- Welcome -->
+    <section id="welcome" class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl text-[#d4af37] mb-6 uppercase tracking-widest">Welcome</h2>
+        <p class="text-lg leading-relaxed text-gray-300">
+            I’m Love Psychic Mary, a 3rd generation psychic specializing in love and relationship guidance. For nearly three decades, I’ve helped thousands gain clarity, heal emotionally, and navigate soulmate and twin flame journeys.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-[#141414]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl text-[#d4af37] text-center mb-10 uppercase tracking-widest">Sacred Services</h2>
+            <div class="grid gap-6">
+                <div class="glass-card p-6">
+                    <h3 class="text-lg text-[#d4af37] mb-2 font-bold">Psychic Love Readings</h3>
+                    <p class="text-gray-400 text-sm">Deep insight into your current relationship dynamics and hidden influences.</p>
+                </div>
+                <div class="glass-card p-6">
+                    <h3 class="text-lg text-[#d4af37] mb-2 font-bold">Twin Flame & Soulmates</h3>
+                    <p class="text-gray-400 text-sm">Navigate the intense energy and karmic lessons of spiritual connections.</p>
+                </div>
+                <div class="glass-card p-6">
+                    <h3 class="text-lg text-[#d4af37] mb-2 font-bold">Breakup Clarity</h3>
+                    <p class="text-gray-400 text-sm">Finding peace and understanding the path to healing or reconnection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="book" class="text-center">
+        <h2 class="text-3xl text-[#d4af37] mb-8 uppercase tracking-widest">Book Now</h2>
+        <div class="glass-card max-w-sm mx-auto p-8 shadow-2xl">
+            <p class="text-xs uppercase tracking-widest text-[#d4af37] mb-2">Direct Line</p>
+            <a href="tel:4152158598" class="text-2xl font-bold text-white no-underline block mb-6 hover:text-[#d4af37]">415-215-8598</a>
+            
+            <hr class="border-yellow-900/20 mb-6">
+            
+            <p class="text-xs uppercase tracking-widest text-[#d4af37] mb-4">Inquiry by Email</p>
+            <a href="mailto:mysticmary43@gmail.com?subject=Reading Request&body=Hi Mary, I'd like to book a reading." 
+               class="cta-button w-full py-4 rounded-lg text-sm tracking-widest uppercase shadow-lg">
+                Send Request
+            </a>
+            <p class="text-[10px] text-gray-500 mt-4">Typical response time: Under 24 hours</p>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-[10px] uppercase tracking-widest">
+        © 2026 Love Psychic Mary · Dedicated to Clarity & Healing
+    </footer>
+
+</body>
+</html>
+
